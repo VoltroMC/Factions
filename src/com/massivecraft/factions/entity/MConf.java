@@ -129,9 +129,6 @@ public class MConf extends Entity<MConf>
 	
 	// What power should a player start with?
 	public double defaultPlayerPower = 0.0;
-
-	// What power should a faction start with?
-	public double defaultFactionPower = 100.0;
 	
 	// -------------------------------------------- //
 	// MOTD
@@ -731,9 +728,6 @@ public class MConf extends Entity<MConf>
 
 	// Should the dynmap intagration be used?
 	public boolean dynmapEnabled = true;
-
-	// Should claims on the dynmap appear filled in when surrounded, even if they are not actually filled in?
-	public boolean dynmapFilledClaims = true;
 
 	// Should the dynmap updates be logged to console output?
 	public boolean dynmapLogTimeSpent = false;
