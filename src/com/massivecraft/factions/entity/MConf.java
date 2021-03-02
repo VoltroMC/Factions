@@ -68,7 +68,7 @@ public class MConf extends Entity<MConf>
 	// COMMAND ALIASES
 	// -------------------------------------------- //
 	
-	// Don't you want "f" as the base command alias? Simply change it here.
+	// Don't want "f" as the base command alias? Simply change it here.
 	public List<String> aliasesF = MUtil.list("f");
 	
 	// -------------------------------------------- //
@@ -127,7 +127,7 @@ public class MConf extends Entity<MConf>
 	// "none" means Wilderness. Remember to specify the id, like "3defeec7-b3b1-48d9-82bb-2a8903df24e3" and not the name.
 	public String defaultPlayerFactionId = Factions.ID_NONE;
 	
-	// What power should the player start with?
+	// What power should a player start with?
 	public double defaultPlayerPower = 0.0;
 	
 	// -------------------------------------------- //
@@ -215,6 +215,10 @@ public class MConf extends Entity<MConf>
 	// Is claiming from other factions even allowed?
 	// Set this to false to disable territorial warfare altogether.
 	public boolean claimingFromOthersAllowed = true;
+
+	// Is it required for factions to have an inflated land/power ratio in order to have their land conquered by another faction?
+	// Set this to false to allow factions to invade each other without requiring them to have an inflated land/power ratio.
+	public boolean claimingInflatedRequired = true;
 	
 	// Is a minimum distance (measured in chunks) to other factions required?
 	// 0 means the feature is disabled.
@@ -269,7 +273,7 @@ public class MConf extends Entity<MConf>
 	// Set this to true to override the default respawn location.
 	public boolean warpsTeleportToOnDeathActive = false;
 
-	// And waht faction warp should it be? It must have a specific name.
+	// And what faction warp should it be? It must have a specific name.
 	public String warpsTeleportToOnDeathName = "home";
 	
 	// This value can be used to tweak compatibility with other plugins altering the respawn location.
